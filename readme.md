@@ -2,8 +2,6 @@
 
 > just get module name
 
-[中文](./readme.md) | ~~[english](./readme.en.md)~~
-
 ## Install
 
 
@@ -46,6 +44,11 @@ Desc: | return package.json name
 Type: | `function`
 Desc: | return package.json name
 
+## With
+
+- [pkg-conf](https://github.com/sindresorhus/pkg-conf)
+
+> pkg name return Object, so ,i change String Type
 
 ## License
 
