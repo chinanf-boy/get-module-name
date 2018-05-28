@@ -1,6 +1,6 @@
 {
 	"name": "get-module-name",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "just get module name",
 	"license": "MIT",
 	"main": "dist/get-module-name.js",
@@ -16,7 +16,7 @@
 	},
 	"scripts": {
 		"test": "ava -v -s",
-		"dev":"microbundle watch",
+		"dev": "microbundle watch",
 		"precommit": "lint-staged",
 		"prepublish": "npm run build",
 		"build": "microbundle",
