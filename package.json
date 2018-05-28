@@ -1,0 +1,51 @@
+{
+	"name": "get-module-name",
+	"version": "0.0.0",
+	"description": "just get module name",
+	"license": "MIT",
+	"main": "dist/get-module-name.js",
+	"module": "dist/get-module-name.m.js",
+	"repository": "chinanf-boy/get-module-name",
+	"author": {
+		"name": "chinanf-boy",
+		"email": "865501259@qq.com",
+		"url": "llever.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "ava -v -s",
+		"precommit": "lint-staged",
+		"prepublish": "npm run build",
+		"build": "microbundle",
+		"pub": "npm run test && npm run npmUp && npm run git",
+		"npmUp": "npm version patch && npm publish",
+		"git": "git push && git push --tags"
+	},
+	"size-limit": [
+		{
+			"path": "dist/get-module-name.js"
+		}
+	],
+	"lint-staged": {
+		"*.{js,json,css,md}": [
+			"prettier --single-quote --trailing-comma es5 --write",
+			"git add"
+		]
+	},
+	"files": [],
+	"keywords": [
+		""
+	],
+	"dependencies": {
+		"weoptions": "^0.0.7",
+		"two-log": "^0.0.2"
+	},
+	"devDependencies": {
+		"lint-staged": "^7.0.0",
+		"microbundle": "^0.4.4",
+		"prettier": "^1.12.1",
+		"ava": "^0.25.0"
+	}
+}
