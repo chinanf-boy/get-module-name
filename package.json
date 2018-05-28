@@ -37,12 +37,11 @@
 	},
 	"files": [],
 	"keywords": [
-		""
+		"pkg",
+		"name"
 	],
 	"dependencies": {
-		"pkg-conf": "^2.1.0",
-		"two-log": "^0.0.2",
-		"weoptions": "^0.0.7"
+		"pkg-conf": "^2.1.0"
 	},
 	"devDependencies": {
 		"lint-staged": "^7.0.0",
