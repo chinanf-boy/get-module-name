@@ -16,6 +16,7 @@
 	},
 	"scripts": {
 		"test": "ava -v -s",
+		"dev":"microbundle watch",
 		"precommit": "lint-staged",
 		"prepublish": "npm run build",
 		"build": "microbundle",
@@ -39,8 +40,9 @@
 		""
 	],
 	"dependencies": {
-		"weoptions": "^0.0.7",
-		"two-log": "^0.0.2"
+		"pkg-conf": "^2.1.0",
+		"two-log": "^0.0.2",
+		"weoptions": "^0.0.7"
 	},
 	"devDependencies": {
 		"lint-staged": "^7.0.0",

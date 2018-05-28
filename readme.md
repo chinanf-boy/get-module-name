@@ -1,4 +1,4 @@
-# get-module-name [![Build Status](https://travis-ci.org/chinanf-boy/get-module-name.svg?branch=master)](https://travis-ci.org/chinanf-boy/get-module-name) [![explain](http://llever.com/explain.svg)](https://github.com/chinanf-boy/get-module-name-explain)
+# get-module-name [![Build Status](https://travis-ci.org/chinanf-boy/get-module-name.svg?branch=master)](https://travis-ci.org/chinanf-boy/get-module-name)
 
 > just get module name
 
@@ -22,35 +22,29 @@ yarn add get-module-name
 ## Usage
 
 ```js
-const getModuleName = require('get-module-name');
+const getname = require('get-module-name');
+// process.cwd() package.json name
 
-getModuleName('unicorns');
-//=> 'unicorns & rainbows'
+await getname() // Promise
+getname.sync() // sync
 ```
 
 
 ## API
 
-### getModuleName(input, [options])
+### getname
 
-#### input
-
-name: | input
+ name: | getname
 ---------|----------
-Type: | `string`
-Desc: | Lorem ipsum.
+Type: | `function:Promise`
+Desc: | return package.json name
 
-#### options
+##### sync
 
-##### foo
-
- name: | foo
+ name: | sync
 ---------|----------
-Type: | `boolean`
-Default: | `false`
-Desc: | Lorem ipsum.
-
-
+Type: | `function`
+Desc: | return package.json name
 
 
 ## License

@@ -1,10 +1,21 @@
 'use strict';
-module.exports = (input, opts) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
-	}
+const pkgConf = require('pkg-conf');
 
-	opts = opts || {};
+function o2s(o){
+	return Object.keys(o).map(k =>o[k]).join('')
+}
 
-	return input + ' & ' + (opts.postfix || 'rainbows');
+const sync = function(){
+	const config = pkgConf.sync('name');
+	return o2s(config)
+}
+
+const getname = async function(){
+	const config = await pkgConf('name');
+	return o2s(config)
 };
+
+module.exports = getname
+module.exports.sync = sync
+module.exports.o2s = o2s
+
