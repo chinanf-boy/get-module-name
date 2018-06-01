@@ -53,6 +53,7 @@ Desc: | return package.json name
 ## use by
 
 - [node-modules-size](https://github.com/chinanf-boy/node-modules-size) show node_modules hole size
+- [two-log](https://github.com/chinanf-boy/two-log) I just need two style message show
 
 ## License
 
